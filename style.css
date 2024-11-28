@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .flashcard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #errorCount {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  

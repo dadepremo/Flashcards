@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App with Hints</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Flashcard Quiz with Hints</h1>
+    <input type="file" id="fileInput" accept=".xlsx" />
+    <button id="startButton" disabled>Start Quiz</button>
+    <div id="quizContainer" class="hidden">
+      <div class="flashcard">
+        <p id="question">Question</p>
+        <button id="hintButton" class="hidden">Show Hint</button>
+        <p id="hint" class="hidden">Hint: </p>
+      </div>
+      <input type="text" id="answerInput" placeholder="Type your answer" />
+      <button id="submitAnswer">Submit</button>
+      <p id="errorCount">Correct: 0 | Errors: 0</p>
+      <p id="progress">Progress: 0 / 0</p> <!-- New Progress Counter -->
+      <button id="replayButton" class="hidden">Replay</button>
+    </div>    
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
